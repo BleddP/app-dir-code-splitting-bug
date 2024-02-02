@@ -16,7 +16,7 @@ const Home = () => {
 
           <div>
             <Link href="/bundled/server-wrapper">
-              With server wrapper (export * from index.ts)
+              With server wrapper (using export * from index.ts)
             </Link>
             <p>
               ↑ This <strong>will not</strong> lazy-load the dyanmically
@@ -25,11 +25,12 @@ const Home = () => {
           </div>
           <div>
             <Link href="/bundled/client-wrapper">
-              With client wrapper (export * from index.ts)
+              With client wrapper (using export * from index.ts)
             </Link>
             <p>
               ↑ This <strong>will not</strong> lazy-load the dyanmically
-              imported component <strong>(bug!)</strong>
+              imported component, only because it is exported as * from
+              index.ts?
             </p>
           </div>
           <div>
@@ -38,7 +39,7 @@ const Home = () => {
             </Link>
             <p>
               ↑ This <strong>will not</strong> lazy-load the dyanmically
-              imported component (expected)
+              imported component
             </p>
           </div>
           <div>
@@ -48,7 +49,7 @@ const Home = () => {
 
             <p>
               ↑ This <strong>will</strong> lazy-load the dyanmically imported
-              component (expected, but unclear from Next.js Docs)
+              component's Javascript and CSS.
             </p>
           </div>
         </div>

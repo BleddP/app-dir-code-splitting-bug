@@ -4,7 +4,7 @@ import Homer from '../../assets/simpsons.jpeg'
 export const VeryLazy = () => {
   return (
     <div style={{ border: '1px solid gray', padding: 12, margin: 12 }}>
-      <h4>This is a very lazy component</h4>
+      <h4>This is a very lazy component, imported via dynamic import</h4>
       <Image
         src={Homer}
         alt="lazy"

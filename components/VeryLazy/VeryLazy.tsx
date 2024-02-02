@@ -5,7 +5,7 @@ import styles from './very-lazy.module.scss'
 export const VeryLazy = () => {
   return (
     <div className={styles['very-lazy']}>
-      <h4>This is a very lazy component</h4>
+      <h4>This is a very lazy component, imported via dynamic import</h4>
       <Image
         src={Homer}
         alt="lazy"

@@ -1,11 +1,12 @@
 import Image from 'next/image'
 import Homer from '../../assets/simpsons.jpeg'
+import styles from './very-lazy-client.module.scss'
 
 export const VeryLazyClient = () => {
   return (
-    <div style={{ border: '1px solid gray', padding: 12, margin: 12 }}>
+    <div className={styles['very-lazy-client']}>
       <h2>
-        I am very lazy too, let's change some things so the chunk is different
+        <h4>This is a very lazy component, imported via dynamic import</h4>
       </h2>
       <Image
         src={Homer}
