@@ -1,9 +1,10 @@
 import Image from 'next/image'
 import Homer from '../../assets/simpsons.jpeg'
+import styles from './very-lazy.module.scss'
 
 export const VeryLazy = () => {
   return (
-    <div style={{ border: '1px solid gray', padding: 12, margin: 12 }}>
+    <div className={styles['very-lazy']}>
       <h4>This is a very lazy component</h4>
       <Image
         src={Homer}

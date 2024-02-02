@@ -8,8 +8,8 @@ const VeryLazyClient = dynamic(() =>
 )
 
 export const ClientWrapper = () => {
-  const [showNormalImport, setShowNormalImport] = useState(true)
-  const [showLazyImport, setShowLazyImport] = useState(true)
+  const [showNormalImport, setShowNormalImport] = useState(false)
+  const [showLazyImport, setShowLazyImport] = useState(false)
 
   return (
     <div>

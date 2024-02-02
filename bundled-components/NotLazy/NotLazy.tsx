@@ -1,8 +1,9 @@
 'use client'
+import styles from './not-lazy.module.scss'
 
 export const NotLazy = () => {
   return (
-    <div style={{ border: '1px solid gray', padding: 12, margin: 12 }}>
+    <div className={styles['not-lazy']}>
       <h2>
         I am a component that's not very lazy, for example, a rich text
         component?
