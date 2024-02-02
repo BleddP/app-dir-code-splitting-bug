@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "strict": false,
+    "paths": {
+      "@bundled-components": ["./bundled-components/index"],
+      "@components/*": ["./components/*"],
+    }
+  }
+}
+  
