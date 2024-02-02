@@ -4,7 +4,7 @@ import styles from './very-lazy-client.module.scss'
 
 export const VeryLazyClient = () => {
   return (
-    <div className={styles['very-lazy-client']}>
+    <div className={styles['very-lazy-client-styles']}>
       <h2>
         <h4>This is a very lazy component, imported via dynamic import..</h4>
       </h2>
