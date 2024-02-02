@@ -22,7 +22,7 @@ export const ClientWrapper = () => {
             id="not-lazy-client"
             name="not-lazy-client"
             checked={showNormalImport}
-            onClick={() => setShowNormalImport(!showNormalImport)}
+            onChange={() => setShowNormalImport(!showNormalImport)}
           />
           <label htmlFor="not-lazy-client">
             Show not lazy (no dynamic import)
@@ -34,7 +34,7 @@ export const ClientWrapper = () => {
             id="very-lazy-client"
             name="very-lazy-client"
             checked={showLazyImport}
-            onClick={() => setShowLazyImport(!showLazyImport)}
+            onChange={() => setShowLazyImport(!showLazyImport)}
           />
           <label htmlFor="very-lazy-client">
             Show lazy (dynamic import, see network tab)
